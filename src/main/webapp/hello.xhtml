@@ -14,9 +14,9 @@
 
 		<!--<h:commandButton value="Welcome Me" action="welcome"></h:commandButton>-->
 		Name:
- 		<h:inputText value="#{HelloBean.name}"></h:inputText>
+ 		<h:inputText value="#{helloBean.name}"></h:inputText>
 		  Receipt Date : 
-		 <h:inputText id="date" value="#{receipt.date}" size="20"
+		 <h:inputText id="date" value="#{helloBean.date}" size="20"
 			required="true" label="Receipt Date">
 
 			<f:convertDateTime pattern="d-M-yyyy" />
@@ -26,6 +26,7 @@
 		</h:inputText>
 
 		<h:commandButton value="Submit" action="receipt" />
+		<h:link value="Visualizar Listado" outcome="listado" />
 	</h:form>
 </h:body>
 </html>
